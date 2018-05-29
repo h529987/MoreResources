@@ -32,7 +32,7 @@ class  expert(models.Model):
 		max_length = 32
 		)
 
-class administrator(models.Model)
+class administrator(models.Model):
 	administrator_id = models.ForeignKey(
 		'normal_user',
 		on_delete = models.CASCADE,

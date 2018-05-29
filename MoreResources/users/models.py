@@ -26,8 +26,14 @@ class normal_user(models.Model):
 class  expert(models.Model):
 	expert_id = models.ForeignKey(
 		'normal_user', 
-		on_delete=models.CASCADE,
+		on_delete = models.CASCADE,
 		)
 	contact = models.CharField(
 		max_length = 32
+		)
+
+class administrator(models.Model)
+	administrator_id = models.ForeignKey(
+		'normal_user',
+		on_delete = models.CASCADE,
 		)

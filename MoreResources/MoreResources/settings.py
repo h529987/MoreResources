@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
 	'users.apps.UsersConfig',
+    'rest_framework',
+    'rest_framework_swagger',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -79,7 +81,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'MoreResources',
         'USER': "root",
-        'PASSWORD': '123456789',
+        'PASSWORD': '1234five',
         'HOST': '127.0.0.1',
         'PORT': '3306',
     }

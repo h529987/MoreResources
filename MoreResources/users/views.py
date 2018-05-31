@@ -6,8 +6,7 @@ from .serializers import NormalUserSerializer, ExpertSerializer, AdministratorSe
 from rest_framework import viewsets, response
 from rest_framework.decorators import api_view, renderer_classes
 
-class NormalUserViewSet(viewsets.ModelViewSet):
-	"""
+    """
     retrieve:
         Return a user instance.
 
@@ -26,5 +25,10 @@ class NormalUserViewSet(viewsets.ModelViewSet):
     update:
         Update a user.
     """
+class NormalUserViewSet(viewsets.ModelViewSet):
 	queryset = normal_user.objects.all()
 	serializer_class = NormalUserSerializer
+
+class ExpertViewSet(viewsets.ModelViewSet):
+    queryset = expert.objects.all()
+    serializer_class = ExpertSerializer
